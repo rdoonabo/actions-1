@@ -1,0 +1,18 @@
+name: ascii-myworkflow
+on: push
+jobs:
+    ascii-job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: checkout action
+          uses: actions/checkout@v6
+        - name: install cowsay program/binary to ubuntu
+          run: apt-get install cowsay -y
+        - name: Generate ASCII Artwork
+          run: cowsay -f dog "Run for honest, I am a DOG" >> dog.txt
+        - name: test file exists
+          run: grep -i "dog" dog.txt
+        - name: Read File
+          run: cat dog.txt
+        - name: list repo files
+          run: ls -ltra    
