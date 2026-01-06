@@ -9,10 +9,10 @@ jobs:
         - name: install cowsay program/binary to ubuntu
           run: sudo apt-get install cowsay -y
         - name: Generate ASCII Artwork
-          run: cowsay -f dog "Run for honest, I am a DOG" >> dog.txt
+          run: cowsay -f dragon "Run for honest, I am a DRAGON" >> dragon.txt
         - name: test file exists
-          run: grep -i "dog" dog.txt
+          run: grep -i "dragon" dragon.txt
         - name: Read File
-          run: cat dog.txt
+          run: cat dragon.txt
         - name: list repo files
           run: ls -ltra    
