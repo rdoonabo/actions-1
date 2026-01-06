@@ -1,0 +1,16 @@
+# this is first workflow of actions.
+name: my-first-flow
+on : push
+
+jobs:
+    first-job:
+        runs-on: unbuntu:latest
+        steps:
+        - name: welcome to actions
+          run: echo "welcome to actions"
+        - name: list files
+          run: ls
+        - name: reading file
+          run: cat README.md
+            
+          
