@@ -4,7 +4,7 @@ on : push
 
 jobs:
     first-job:
-        runs-on: unbuntu:latest
+        runs-on: unbuntu   
         steps:
         - name: welcome to actions
           run: echo "welcome to actions"
@@ -12,5 +12,5 @@ jobs:
           run: ls
         - name: reading file
           run: cat README.md
-            
+
           
