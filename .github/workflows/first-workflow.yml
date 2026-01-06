@@ -9,13 +9,13 @@ jobs:
         - name: checkout action
           uses: actions/checkout@v6
 
-        - name: welcome to actions
-          run: echo "welcome to actions"
-
-        - name: list files
-          run: ls
+        - name: welcome to multiline-actions steps
+          run: |
+           echo "welcome to multi-line actions"
+           ls -tlra
+           cat README.md
+        - name: Generate ASCII Artwork
+          run: cowsay -f dog "Run for honest, I am a DOG" >> dog.txt
+             
           
-        - name: reading file
-          run: cat README.md
-
           
