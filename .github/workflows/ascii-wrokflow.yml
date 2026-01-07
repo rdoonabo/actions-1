@@ -6,13 +6,6 @@ jobs:
         steps:
         - name: checkout action
           uses: actions/checkout@v6
-        - name: install cowsay program/binary to ubuntu
-          run: sudo apt-get install cowsay -y
-        - name: Generate ASCII Artwork
-          run: cowsay -f dragon "Run for honest, I am a DRAGON" >> dragon.txt
-        - name: test file exists
-          run: grep -i "dragon" dragon.txt
-        - name: Read File
-          run: cat dragon.txt
-        - name: list repo files
-          run: ls -ltra    
+        - name: Exccute shell scritpy first
+          run: ./myscripy.sh  
+       
