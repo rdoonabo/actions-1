@@ -9,5 +9,5 @@ jobs:
         - name: present location
           run: ls -ltra  
         - name: Exccute shell scritpy first
-          run: ./myscripy.sh  
+          run: .github/myscripy.sh  
        
